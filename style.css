@@ -121,6 +121,7 @@ html {
 .main-page-text h1 {
 	font-size: 140px;
 	color: #dbb60e;
+	font-weight: 900;
 }
 
 .main-page-text p:nth-child(1) {
