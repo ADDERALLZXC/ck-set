@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Inter', sans-serif;
 	color: rgb(41, 46, 48);
 }
 
@@ -120,8 +120,8 @@ html {
 
 .main-page-text h1 {
 	font-size: 140px;
-	color: #dbb60e;
 	font-weight: 900;
+	color: #dbb60e;
 }
 
 .main-page-text p:nth-child(1) {
@@ -299,7 +299,7 @@ html {
 .gallery-list {
 	display: flex;
 	justify-content: space-between;
-	width: 40%;
+	width: 45%;
 	margin: 0 auto;
 	flex-wrap: wrap;
 }
@@ -349,7 +349,7 @@ html {
 }
 
 .info {
-	width: 45%;
+	width: 50%;
 }
 
 .info h3 {
@@ -1357,5 +1357,17 @@ html {
 	.pick-set {
 		padding: 2% 3%;
 		width: 70%;
+	}
+
+	.nav {
+		width: 97%;
+	}
+
+	.nav_items {
+		width: 78%;
+	}
+
+	.nav_items a {
+		font-size: 13px;
 	}
 }
