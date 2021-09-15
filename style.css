@@ -131,17 +131,18 @@ html {
 .main-page-text p:nth-child(3) {
 	font-size: 29px;
 	font-weight: 400;
+	margin-top: 2%;
 }
 
 .main-page-text p:nth-child(4) {
 	text-decoration: line-through;
 	font-size: 35px;
-	margin-top: 10%;
+	margin-top: 5%;
 }
 
 .main-page-text p:nth-child(5) {
 	background-color: #dbb60e;
-	width: 300px;
+	width: 325px;
 	padding: 0.3% 0;
 	margin: 1% auto;
 	color: #fff;
@@ -151,6 +152,7 @@ html {
 
 .main-page-text p:nth-child(6) {
 	font-size: 21px;
+	margin-top: 4%;
 }
 
 .limited-span {
