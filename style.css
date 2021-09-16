@@ -1474,7 +1474,6 @@ html {
 
 .select-box .option,
 .selected {
-	padding: 12px 24px;
 	cursor: pointer;
 }
 
@@ -1482,8 +1481,11 @@ html {
 	background: #aa8d0d;
 }
 
-.select-box label {
+.select-box label,
+.selected {
 	cursor: pointer;
+	padding: 12px 24px;
+	display: block;
 }
 
 .select-box .option .radio {
@@ -1528,4 +1530,12 @@ html {
 	height: 30px;
 	margin: 5% 0 0;
 	cursor: pointer;
+}
+
+input[type='radio'] {
+	display: none;
+}
+
+.sizes input {
+	display: block;
 }
