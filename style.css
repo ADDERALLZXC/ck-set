@@ -156,7 +156,7 @@ html {
 
 .main-page-text p:nth-child(6) {
 	font-size: 21px;
-	margin-top: 4%;
+	margin-top: 4% !important;
 }
 
 .limited-span {
@@ -1192,6 +1192,10 @@ html {
 	.limited-box-text p {
 		font-size: 11px;
 	}
+
+	.main-page {
+		padding-bottom: 80px;
+	}
 }
 
 @media screen and (max-width: 580px) {
@@ -1334,7 +1338,7 @@ html {
 	}
 
 	.best h2 {
-		font-size: 27px;
+		font-size: 26px;
 	}
 
 	.pick-set {
