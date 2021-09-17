@@ -339,12 +339,14 @@ html {
 	box-shadow: 0 0 5px rgb(90, 90, 90);
 }
 
-.pick-set a {
+.pick-set button {
 	color: #dbb60e;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 1px;
+	cursor: pointer;
+	border: 0;
 }
 
 .catalog h3 {
@@ -1203,7 +1205,8 @@ html {
 	}
 
 	.gift-img h2 {
-		font-size: 15px;
+		font-size: 12px;
+		margin-bottom: 2%;
 	}
 
 	.box-text__inner p {
@@ -1323,11 +1326,11 @@ html {
 	}
 
 	.card-button button {
-		font-size: 10px;
+		font-size: 9px;
 	}
 
 	.info-item {
-		font-size: 11px;
+		font-size: 10px;
 	}
 
 	.best h2 {
@@ -1350,11 +1353,21 @@ html {
 	.nav_items a {
 		font-size: 13px;
 	}
+
+	.card-price {
+		font-size: 18px;
+	}
+
+	.card-crossed-price {
+		font-size: 15px;
+	}
 }
 
 /* DropDown PopUp CSS */
 
-.oneclick-popup {
+.oneclick-popup,
+.call-back-form,
+.make-own-popup {
 	width: 100vw;
 	height: 100vh;
 	background-color: rgba(0, 0, 0, 0.5);
@@ -1363,30 +1376,86 @@ html {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	display: none;
+}
+
+.make-own-popup.active {
+	display: block;
+}
+
+.call-back-form.active {
+	display: block;
+}
+
+.call-back-form .close-popup {
+	width: 12px;
+	height: 12px;
+}
+
+.call-back-form__inner form {
+	display: flex;
+	flex-direction: column;
+}
+
+.call-back-form label:last-of-type {
+	font-size: 10px;
+	font-weight: 400;
+	margin-top: 8px;
+}
+
+.min15 {
+	padding: 6% 0 1%;
+}
+
+.call-back-form__inner {
+	width: 300px;
+	height: 220px !important;
+}
+
+.oneclick-popup.active {
+	display: block;
 }
 
 .oneclick-popup__inner-active {
-	height: 560px !important;
+	height: 540px !important;
 }
 
 .oneclick-popup p {
-	margin: 2% 0;
+	margin: 3% 0;
 }
 
 .oneclick-popup p:last-of-type {
-	text-align: left;
-	font-size: 15px;
+	font-size: 10px;
+	margin-top: 12px;
 }
 
-.oneclick-popup__inner {
+.oneclick-popup__inner,
+.call-back-form__inner,
+.make-own-popup__inner {
 	width: 300px;
-	height: 380px;
+	height: 360px;
+	padding: 10px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background-color: #fff;
 	transition: all 0.4s;
+}
+
+.make-own-popup__inner {
+	height: 260px;
+}
+
+.make-own-popup__inner p:first-of-type {
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.make-own-popup__inner p:last-of-type {
+	font-size: 10px;
+	font-weight: 400;
+	margin-top: 8px;
 }
 
 .oneclick-popup-info {
@@ -1408,18 +1477,15 @@ html {
 	width: 100%;
 	opacity: 0;
 	transition: all 0.4s;
-	border-radius: 8px;
 	overflow: hidden;
 	order: 1;
 }
 
 .selected {
 	background: #dbb60e;
-	border-radius: 8px;
 	margin-bottom: 8px;
 	color: #f5f6fa;
 	position: relative;
-
 	order: 0;
 }
 
@@ -1452,12 +1518,10 @@ html {
 .select-box .options-container::-webkit-scrollbar {
 	width: 8px;
 	background: #dbb60e;
-	border-radius: 0 8px 8px 0;
 }
 
 .select-box .options-container::-webkit-scrollbar-thumb {
 	background: #aa8d0d;
-	border-radius: 0 8px 8px 0;
 }
 
 .select-box .option,
@@ -1472,7 +1536,7 @@ html {
 .select-box label,
 .selected {
 	cursor: pointer;
-	padding: 12px 24px;
+	padding: 9px 24px;
 	display: block;
 }
 
@@ -1527,12 +1591,22 @@ html {
 	background-color: #dbb60e;
 	border: 0;
 	color: #fff;
-	width: 150px;
-	height: 30px;
+	width: 100%;
+	height: 38px;
 	margin: 5% 0 0;
 	cursor: pointer;
+	font-size: 14px;
 }
 
 input[type='radio'] {
 	display: none;
+}
+
+.close-popup {
+	position: absolute;
+	top: 3%;
+	right: 3%;
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
 }

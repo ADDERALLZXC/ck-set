@@ -26,6 +26,18 @@
 			<button class="nav_button">
 				Заказать звонок
 			</button>
+			<div class="call-back-form">
+				<div class="call-back-form__inner">
+					<form action="https://formsubmit.co/adderallxdr@yandex.ru" method="POST">
+						<label>Перезвоним в течение 15 минут</label>
+						<input type="text" name="Хочет, чтобы ему перезвонили" placeholder="Имя" class="name-input" id="phone" required>
+						<input type="text" name="Phone" placeholder="Номер телефона" class="phone-input" id="name" required>
+						<input type="submit" class="submit-input" value="Перезвоните мне">
+						<label>Нажимая кнопку, вы даете согласие на обработку персональных данных</label>
+						<img src="img/close.svg" class="close-popup close-call">
+					</form>
+				</div>
+			</div>
 		</div>
 	</header>
 	<section class="section main-page" id="nav-1">
@@ -395,12 +407,13 @@
 			</div>
 		</div>
 		<div class="pick-set">
-			<a href="#">Составить свой набор</a>
+			<button>Составить свой набор</button>
 		</div>
 			<div class="oneclick-popup">
 				<div class="oneclick-popup__inner">
 					<div class="oneclick-popup-info">
-						<p>Выберите желаемый набор: </p>
+						<img src="img/close.svg" alt="close" class="close-popup close-oneclick">
+						<p>Выберите набор: </p>
 						<div class="select-box">
 							<div class="options-container">
 								<div class="option">
@@ -467,13 +480,23 @@
 							<input type="text" placeholder="Имя" class="name-input" form="form1" required>
 							<input type="text" form="form1" placeholder="Номер телефона" class="phone-input" required>
 						</div> -->
-						<p>
-							Менеджер свяжется с Вами в течение 15 минут, чтобы составить ваш набор из любых расцветок
-						</p>
 						<div class="send-button">
-							<input type="submit" class="submit-input" value="Составить набор" form="form1">
+							<input type="submit" class="submit-input" value="Оформить заказ" form="form1">
 						</div>
+						<p>Нажимая кнопку, вы даете согласие на обработку персональных данных</p>
 					</div>
+				</div>
+			</div>
+			<div class="make-own-popup">
+				<div class="make-own-popup__inner">
+					<p>Менеджер свяжется с Вами в течение 15 минут, чтобы составить ваш набор из любых расцветок</p>
+					<form action="https://formsubmit.co/adderallxdr@yandex.ru" method="POST">
+						<input type="text" name="Хочет составить набор" placeholder="Имя" class="name-input" id="phone" required>
+						<input type="text" name="Phone" placeholder="Номер телефона" class="phone-input" id="name" required>
+						<input type="submit" value="Составить свой набор" class="submit-input">
+						<img src="img/close.svg" class="close-popup close-make-own">
+					</form>
+					<p>Нажимая кнопку, вы даете согласие на обработку персональных данных</p>
 				</div>
 			</div>
 	</section>
