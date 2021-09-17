@@ -384,6 +384,13 @@ html {
 	margin: 30px 0 15px;
 }
 
+label[for='size-1']:target {
+	background-color: #dbb60e;
+	color: #fff !important;
+	width: 45px !important;
+	height: 45px !important;
+}
+
 #size-1:checked ~ label[for='size-1'] {
 	background-color: #dbb60e;
 	color: #fff !important;
@@ -1503,7 +1510,15 @@ html {
 	align-items: center;
 }
 
-.sizes input {
+#form1 {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sizes input[type='radio'] {
 	display: none;
 }
 
@@ -1534,8 +1549,4 @@ html {
 
 input[type='radio'] {
 	display: none;
-}
-
-.sizes input {
-	display: block;
 }
