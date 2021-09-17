@@ -720,6 +720,10 @@ html {
 		display: none;
 	}
 
+	.delivery {
+		height: 300px;
+	}
+
 	.delivery-subway {
 		width: 50%;
 	}
